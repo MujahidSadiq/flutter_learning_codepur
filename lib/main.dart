@@ -1,7 +1,8 @@
+import 'package:flutter_learning_codepur/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,14 +10,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final pi =3.14; it is modifiedable .
+
+    // const pi = 3.14;
+
+    // num temp = 4.3;
+    // var day = 'tuesday ';
+
     return const MaterialApp(
-      home: Material(
-        child: Center(
-          child: Text(
-            'welocome to 30 days of flutter ',
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
