@@ -1,4 +1,4 @@
-import 'package:flutter_learning_codepur/pages/Login_page.dart';
+import 'package:flutter_learning_codepur/pages/login_pages.dart';
 import 'package:flutter_learning_codepur/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         routes: {
           // routing
           '/': (context) => const LoginPage(),
-          '/login': (context) => const HomePage(),
+          '/homepage': (context) => const HomePage(),
         });
   }
 }
