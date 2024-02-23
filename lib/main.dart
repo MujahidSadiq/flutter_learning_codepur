@@ -1,4 +1,5 @@
-import 'package:flutter_learning_codepur/home_page.dart';
+import 'package:flutter_learning_codepur/pages/Login_page.dart';
+import 'package:flutter_learning_codepur/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,16 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final pi =3.14; it is modifiedable .
-
-    // const pi = 3.14;
-
-    // num temp = 4.3;
-    // var day = 'tuesday ';
-
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    );
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+        ),
+        routes: {
+          // routing
+          '/': (context) => const LoginPage(),
+          '/login': (context) => const HomePage(),
+        });
   }
 }
